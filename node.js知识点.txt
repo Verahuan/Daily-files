@@ -1,0 +1,47 @@
+node.js特点
+
+-实践驱动
+-异步操作I/O
+-npm开源生态系统
+
+
+用node运行js文件的时候，不要把文件名取成node
+
+浏览器的js不可以操作文件！！！node中可以进行操作（引入模块fs）
+
+1.使用require方法加载核心模块
+var fs=require（‘fs’）
+2.读取文件
+fs.readFile（）
+
+方法toString() 转换为认识的字符（中文乱码/待解决）
+
+
+-node.js的服务器搭建 http模块（创建服务器模块）
+
+http.creatServer（）
+
+回应 request and response
+
+node中的核心模块
+文件操作：js模块
+http服务构建模块：http;
+path路径操作模块、os操作系统信息模块等等
+
+
+node中的模块：
+require是一个方法，在node中的作用就是加载模块的
+node中的模块分为三种：
+1.具名的模块：fs、http
+2.用户自己编写的文件模块（相对路径要加./）
+
+node中只有模块作用域/没有全局作用域：
+定义的变量只在当前模块中有作用，即使是被引入也不会对其他模块有影响
+
+ip和端口号（同一个端口号在同一时间只能被一个程序占用）
+
+
+
+
+
+

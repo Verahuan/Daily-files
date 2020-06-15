@@ -1,0 +1,331 @@
+﻿
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f3f5f7;
+}
+
+.w {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 42px;
+    margin: 30px auto;
+    background-color: #f3f5f7;
+    overflow: hidden;
+}
+
+.logo {
+    float: left;
+    margin-right: 30px;
+    margin-left: 30px;
+    height: 42px;
+    width: 196px;
+    /*background-color:mediumpurple;*/
+}
+
+.header .nav {
+    float: left;
+    height: 42px;
+    /*width: 274px;*/
+    line-height: 42px;
+    /*background-color: aqua;*/
+}
+    /*.header .nav ul {
+        height: 42px;
+    }*/
+    .header .nav li {
+        display: inline-block;
+        height: 42px;
+        margin: 0 20px;
+        /*background-color:aqua;*/
+        font: 400 18px "weiruanyahei";
+    }
+
+        .header .nav li a {
+            display: block;
+            height: 30px;
+            text-decoration: none;
+            color: #050505;
+        }
+
+            .header .nav li a:hover {
+                border-bottom: 2px solid #00adff;
+            }
+
+.search {
+    float: left;
+    height: 42px;
+    margin-left: 140px;
+    line-height: 42px;
+    width: 412px;
+}
+
+    .search input[type=text] {
+        float: left;
+        height: 40px;
+        width: 360px;
+        border: 1px solid #00adff;
+        border-right: none;
+        text-indent: 1em;
+        color: #bfbfbf;
+        font-size: 14px;
+    }
+
+    .search input[type=button] {
+        float: left;
+        height: 42px;
+        width: 50px;
+        background-image: url(../image/fa-search.png);
+        border: 0;
+    }
+
+.user {
+    float: right;
+    height: 42px;
+    margin-right: 40px;
+    line-height: 42px;
+}
+
+    .user li {
+        display: inline-block;
+        height: 42px;
+        font-size: 12px;
+        margin: 0 8px;
+        /*background-color:antiquewhite;*/
+        vertical-align: top;
+    }
+
+        .user li .pic {
+            border-radius: 17px;
+        }
+
+.bar {
+    height: 418px;
+    /*background-color: antiquewhite;*/
+    margin-bottom: 10px;
+}
+
+    .bar .nav {
+        float: left;
+        height: 406px;
+        width: 190px;
+        padding-top: 12px;
+        background-color: #14024b;
+        overflow: hidden;
+    }
+
+        .bar .nav ul {
+            height: 406px;
+            overflow: hidden;
+        }
+
+        .bar .nav li {
+            display: block;
+            height: 20px;
+            line-height: 20px;
+            margin-top: 18px;
+            text-align: center;
+            text-indent: 1em;
+            list-style: none;
+            background-color: #14024b;
+        }
+
+        .bar .nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 13px;
+        }
+
+            .bar .nav a:hover {
+                color: #00adff;
+            }
+
+    .bar .banner {
+        float: left;
+        height: 418px;
+        width: 1000px;
+        background-image: url(../image/banner.jpg)
+    }
+
+/*course部分*/
+.course {
+    height: 55px;
+    /*line-height:55px;*/
+    background-color: white;
+    box-shadow: 0 1px 12px rgba(0,0,0,.4);
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+    .course h6 {
+        float: left;
+        margin: 16px 17px 0 30px;
+        font-size: 14px;
+        color: #00adff;
+    }
+
+    .course li {
+        float: left;
+        height: 20px;
+        width: 85px;
+        margin-top: 16px;
+        list-style: none;
+        text-align: center;
+        text-decoration: none;
+        /*background-color:red;*/
+    }
+
+        .course li a {
+            display: block;
+            text-decoration: none;
+            color: black;
+            border-right: 1px solid grey;
+        }
+
+            .course li a:hover {
+                color: #00adff;
+            }
+
+    .course p {
+        float: right;
+        margin: 16px 16px;
+        color: #00adff;
+    }
+
+.tuijian .shizhan ul {
+    overflow: hidden;
+}
+
+.tuijian .top {
+    overflow: hidden;
+}
+
+    .tuijian .top h6 {
+        float: left;
+        color: #666;
+        font-size: 18px;
+        font-weight: 400;
+        /*margin-bottom:15px;*/
+    }
+
+    .tuijian .top p {
+        float: right;
+        margin-right: 20px;
+    }
+
+.tuijian .shizhan a {
+    display: block;
+}
+
+.tuijian .shizhan img {
+    width: 100%;
+    display: block;
+}
+
+.tuijian .shizhan {
+    margin-bottom: 50px;
+}
+
+    .tuijian .shizhan h6 {
+        display: block;
+        margin: 24px 15px;
+        font-size: 14px;
+        color: black;
+        font-weight: 400;
+    }
+
+    .tuijian .shizhan p {
+        display: block;
+        color: #999999;
+        margin: 0px 15px 15px 15px;
+        font-size: 10px;
+    }
+
+        .tuijian .shizhan p span {
+            color: #ffa82d;
+        }
+
+    .tuijian .shizhan li {
+        display: inline-block;
+        margin-right: 10px;
+        width: 222px;
+        height: 267px;
+        list-style: none;
+        background-color: white;
+        margin-top: 20px;
+    }
+
+        .tuijian .shizhan li a {
+            text-decoration: none;
+            width: 222px;
+            height: 267px;
+        }
+         .tuijian .shizhan li a:hover {
+             box-shadow:2px 2px 5px grey;
+         }
+/*footer格式*/
+.footer {
+    height: 240px;
+    background-color: white;
+    overflow: hidden;
+    padding:0 60px;
+}
+
+    .footer .logo {
+        float: left;
+        width: 430px;
+        font-size: 10px;
+        color: #666666;
+    }
+        .footer .logo .logo-img {
+            margin:26px 0px;
+        }
+
+        .footer .logo .app {
+           
+            width: 120px;
+            height: 30px;
+            line-height:30px;
+            text-align: center;
+            margin-top:15px;
+            border: 1px solid #22b0ff;
+            color: #22b0ff;
+        }
+
+    .footer .intro {
+        float: right;
+        width: 80px;
+        margin-left:120px;
+        margin-top:30px;
+    }
+
+        .footer .intro li {
+            margin-top:10px;
+            list-style: none;
+            font-size: 10px;
+            color: #666666;
+        }
+
+        .footer .intro  h4{
+            font-weight:400;
+            font-size:15px;
+
+        }
+.show {
+    float:right;
+    position:sticky;
+    margin:10px auto;
+    width:100px;
+    height:300px;
+    right:20px;
+    top:120px;
+}
+.show img{
+    width:100%;
+}

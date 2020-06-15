@@ -1,0 +1,190 @@
+html 中的锚点功能实现
+
+<base/>标签
+
+HTML中的单标签
+
+表单：表单域、表单元素、提示信息
+表单元素：input （不同的属性值对应不同的输入形式 例如 type="button"）
+单选/复选按钮的 name 属性必须一样 才可以实现单选操作
+
+默认某一个选项是选择的 checked属性选择
+checked：checked=“checked”
+maxlength:规定最大的输入长度
+
+value是提交给后台的值
+value是显示给用户的值（text）
+
+上传文件：type="file"
+
+<lable>便签与表单一起使用
+
+<lable for=“id”>
+<input id=“id”>
+
+下拉表单<select>
+<option> selected
+
+文本域：<textarea>
+
+一个便签可以 多个class
+
+字体属性 font- Familiy style weight size
+字体属性复合写法
+
+文本属性：
+颜色 color
+text-align：对齐方式
+text-indent:缩进2em
+text-decoration:装饰
+line-height:行号
+
+
+复合选择器： 后代 子代 链接伪类 input伪类 并集 
+父子 div >p
+子 div p
+并列 div,p, div>span, div .class
+
+伪类选择器
+a:hover
+a:visited
+a:active
+a:link
+
+focus伪类：
+input：focus{
+}
+
+
+元素的显示模式：
+块元素
+行内元素
+ 
+块元素都可以设置宽和高 li ol ul div p
+文字类的元素内不可以放块元素 p h1
+
+行内元素
+内部只能放文本或其他行内元素
+<a>里面不可以放<a> 但是可以放 块元素 
+
+行内块元素 input img th 
+一行多个元素 可以设置高度和宽度
+
+显示模式转换：块 block  行内 inline 行内块 inline-block
+
+line-height 等于元素高度 实现单行文字居中
+
+背景：
+背景颜色
+背景图片
+背景重复：no-repeat repent repeat-x repeat-y
+背景位置：center/right  或者X Y
+背景固定
+
+背景复合写法：没有顺序要求
+rgba 控制半透明
+
+导航栏
+letter-spacing: 0px; /*实际情况下 -4这个值可版能还要调权整*/
+word-spacing: -5px; /*实际情况下 -4这个值可能还要调整*/
+
+权重：继承的权重为哦0 !important>id>类>标签>通配
+权重叠加：更精确的定位则执行某个（计算）
+
+盒子模型：
+border-wight
+border-color
+border-style
+
+盒子样式复合写法：没有顺序要求
+
+table 的边框
+border-collapse 合并相同的边框
+
+内边距padding的复合写法：
+1个值：上下左右
+2个值：上下  左右
+3个值：上  左右   下
+4个值：上 右 下 左(顺时针)
+
+外边距：实现块元素水平居中(必须是指定宽度的 左右边距为auto)
+行内元素和行内块元素 可以给父元素添加text-aline 把其当做是文字来对待
+
+嵌套块元素垂直外边距的塌陷问题：
+1.为父元素定义上边框
+2.为父元素定义内边距
+3.为父元素添加:overflow:hiden
+
+行内元素只可以设置左右边距
+
+圆角边框：border-radius 顺时针4个值
+盒子阴影:box-shadow
+文字阴影
+
+布局:文档流/标准流布局（默认的）
+
+页面布局需要三种布局方式：标准流 浮动 定位 
+
+行内块元素中间会有缝隙，比较难控制
+float:
+浮动的特性：
+1.脱离文档流（脱彪）
+2.浮动的元素会在一行内显示，并且元素顶部对齐
+3.浮动元素会具有行内块元素特性【不再和父元素一样宽 而是和内容一样宽】
+
+给元素设置浮动之后 默认为块元素
+高度/宽度设置有效
+
+
+
+多个盒子纵向排列找 文档流
+多个盒子横向排列找 浮动
+
+浮动注意：需要和标准流搭配使用 一个元素浮动了，原则上，
+其余的兄弟元素也要浮动，不然会影响布局，浮动的元素不会影响上面的文档流元素
+浮动的元素只会影响后面的标准流 （前面的标准流依然会影响该浮动元素）
+
+子元素都浮动 父元素依然被子元素撑开
+清除浮动：本质就是清除浮动元素造成的影响
+
+清除浮动的方法:
+1.额外标签：在最后一个浮动元素后面加一个盒子 并且给盒子加属性 clear:both
+2.overflow:hidden（不能显示出溢出的部分）
+3.after伪元素（意思是在元素最后新增一个元素）定义 display：block;content="" clear:both height:0;visibility
+4.双伪元素
+
+css属性书写顺序
+布局定位:clear visibility display overflow position
+自身的属性（宽高之类的）:padding height border background
+文本属性
+其他属性（css3）
+
+导航栏：ul>li>a
+
+flex布局
+
+
+定位：css的position属性设置：static absolute fixed sticky reletive
+定位=定位模式+边偏移
+定位模式用于指定一个元素在文档中的定位方式，边偏移决定元素的最终位置
+
+相对定位：位置相对原来的坐标移动，原来的位置继续占有
+	！子绝父相
+
+绝对定位：绝对定位原本的位置不占有位置了；
+	如果祖先元素没有定位/没有祖先元素，以浏览器为准进行定位；
+        如果父元素有定位（相对/绝对/固定），以父元素为准进行定位；（以最近带有定位的祖先元素为准）
+
+固定定位：定位在浏览器可视区域的某一个位置。
+	可视区域！！！
+	不和滚动条一起滚动
+	脱离标准流
+	挨着版心边缘 
+
+粘性定位：可视窗口为参考点移动元素
+	占有原来的位置
+	！兼容性差 IE不支持
+	
+	
+
+
